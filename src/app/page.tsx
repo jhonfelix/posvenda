@@ -37,8 +37,12 @@ export default function Home() {
 
     </main>
   );
+  
 
-  /* <Faq />
+  /* 
+  git init -b main
+  
+  <Faq />
   <Testimonials />
   <Clients />
     <HomeBlogSection posts={posts} />
