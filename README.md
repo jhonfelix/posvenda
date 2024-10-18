@@ -4,6 +4,8 @@ O PosVenda é um sistema de gestão comercial online e, que torna sua equipe mai
 
 www.posvenda.net.br
 
+Segmentos:
+
 
 
 
