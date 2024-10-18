@@ -41,6 +41,10 @@ export default function Home() {
 
   /* 
   git init -b main
+  git add .
+  git commit -m 'firt commit'
+  git remote add origin https://github.com/jhonfelix/posvenda.git
+  git push -f origin main
   
   <Faq />
   <Testimonials />
