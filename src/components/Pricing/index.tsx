@@ -1,5 +1,7 @@
 "use client";
 import SectionTitle from "../Common/SectionTitle";
+import PricingBox from "./PricingBox";
+import { pricingData } from "./pricingData";
 
 const Pricing = () => {
   return (
@@ -10,15 +12,18 @@ const Pricing = () => {
       <div className="container">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle="Pricing Table"
-            title="Our Pricing Plan"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            subtitle="Tabela de Preço"
+            title="Conheça nossos planos"
+            paragraph="Veja os planos do melhor sistema de gestão
+recomendados para a sua empresa."
             center
           />
         </div>
 
         <div className="-mx-4 flex flex-wrap justify-center">
-  
+          {pricingData.map((product, i) => (
+            <PricingBox key={i} product={product} />
+          ))}     
         </div>
       </div>
     </section>

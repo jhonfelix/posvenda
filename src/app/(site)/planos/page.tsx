@@ -5,18 +5,19 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Pricing Page | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "This is pricing page description",
+    "Planos | Conheça nossos planos",
+  description: "PosVenda planos do melhor sistema de gestão recomendados para a sua empresa",
 };
 
 const PricingPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Pricing Page" />
+      
       <Pricing />
-      <Faq />
+      
     </>
   );
 };
-
+//<Breadcrumb pageName="Conheça nossos planos" />
+//<Faq />
 export default PricingPage;

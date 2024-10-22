@@ -1,5 +1,21 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+
 const Contact = () => {
-  return (
+
+  const [nome, setNome] = useState(" ")
+  const [email, setEmail] = useState(" ")
+  const [telefone, setTelefone] = useState(" ")
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+    alert('formulario enviado')
+  }
+
+
+
+  return (<>
     <section id="contact" className="relative py-20 md:py-[120px]">
       <div className="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"></div>
       <div className="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-[#E9F9FF] dark:bg-dark-700 lg:h-[45%] xl:h-1/2"></div>
@@ -83,17 +99,17 @@ const Contact = () => {
               Quer saber mais 
               sobre o nosso software?
               </h3>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-[22px]">
                   <label
-                    htmlFor="fullName"
+                    htmlFor="nome"
                     className="mb-4 block text-sm text-body-color dark:text-dark-6"
                   >
                     Nome*
                   </label>
                   <input
                     type="text"
-                    name="fullName"
+                    name="nome" value={nome} onChange={e => setNome(e.target.value)}
                     placeholder="Fulano de Tal"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
@@ -107,28 +123,28 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    name="email"
+                    name="email" value={email} onChange={e => setEmail(e.target.value)}
                     placeholder="example@yourmail.com"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
                 <div className="mb-[22px]">
                   <label
-                    htmlFor="phone"
+                    htmlFor="telefone"
                     className="mb-4 block text-sm text-body-color dark:text-dark-6"
                   >
                     Telefone*
                   </label>
                   <input
                     type="text"
-                    name="phone"
+                    name="telefone" value={telefone} onChange={e => setTelefone(e.target.value)}
                     placeholder="+55 61 9999 9999"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
                 <div className="mb-0">
                   <button
-                    type="submit"
+                    type="submit" 
                     className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
                   >
                     Enviar
@@ -140,7 +156,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  );
+    </> );
 };
 
 export default Contact;
