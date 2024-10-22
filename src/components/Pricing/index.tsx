@@ -12,7 +12,7 @@ const Pricing = () => {
       <div className="container">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle="Tabela de Preço"
+            subtitle="Tabela de Preços"
             title="Conheça nossos planos"
             paragraph="Veja os planos do melhor sistema de gestão
 recomendados para a sua empresa."
