@@ -19,7 +19,7 @@ const CallToAction = () => {
                 Sem uma gestão eficiente e automatizada, sua empresa pode sofrer com a desorganização e perder horas valiosas em processos manuais e ineficientes. Otimize seu negócio com Posvenda e ganhe tempo para focar no que realmente importa.
                 </p>
                 <Link
-                  href="https://api.whatsapp.com/send?phone=6199955-4293"
+                  href="https://api.whatsapp.com/send?phone=61999554293"
                   className="inline-flex items-center justify-center rounded-md gap-x-2 border border-transparent bg-green-500 px-7 py-3 text-base font-medium text-white transition hover:bg-secondary"
                 >
                   <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
