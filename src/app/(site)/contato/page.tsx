@@ -4,9 +4,9 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title:
-    "Contato | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "This is contact page description",
+  title: "Contato | Fale conosco",
+  description: "Sistema Online de Gestão Comercial, com NF-e, NFS-e, Controle de Estoque, Controle de Venda, Acompanhamento de NF-e, Sistema emissão Nota Fiscal Eletrônica. ",
+  
 };
 
 const ContactPage = () => {
