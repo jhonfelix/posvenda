@@ -110,7 +110,7 @@ const Footer = () => {
 <stop offset="1" stop-color="#27B43E"/>
 </linearGradient>
 </defs>
-</svg>+55 (61) 99955-4293
+</svg><a href="https://api.whatsapp.com/send?phone=6199955-4293">+55 (61) 99955-4293</a>
 </div>
               </p>
 
