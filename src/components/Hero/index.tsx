@@ -23,12 +23,12 @@ const Hero = () => {
                 </p>
                 <ul className="mb-4 flex flex-wrap items-center justify-center gap-5">
                   <li>
-                    <Link
-                      href="https://estoquedez.bubbleapps.io/version-test/"
+                    <a
+                      href="https://api.whatsapp.com/send?phone=61999554293"
                       className="inline-flex items-center justify-center rounded-md bg-success-500 px-7 py-[14px] text-center text-white font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-secondary"
                     >
                       Quero fazer um teste grátis
-                    </Link>
+                    </a>
                   </li>
                 </ul>
 
