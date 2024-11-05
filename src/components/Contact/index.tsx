@@ -1,28 +1,45 @@
 "use client";
-import { sendEmail } from "@/utils/email";
-import { FormEvent, useEffect, useState } from "react";
+import { useState } from "react";
+import Loader from "@/components/Common/Loader";
+import toast from "react-hot-toast";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const Contact = () => {
 
   const [nome, setNome] = useState(" ")
   const [email, setEmail] = useState(" ")
   const [telefone, setTelefone] = useState(" ")
-  const [data, setData] = useState("")
-  const [talks, setTalks] = useState<string[]>([
-    nome,
-    telefone,
-    email
-  ])
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setData(`${nome} ${telefone} ${email}`)
-  }, [nome, telefone, email])
+  const router = useRouter();
 
-
-
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    alert(data)
+    setLoading(true);
+
+
+
+    try {
+      const res = await axios.post(`/api/contato`, {
+        nome: nome,
+        email: email,
+        telefone: telefone
+      });
+
+      if (res.status === 200) {
+        toast.success(res.data, {
+          duration: 5000
+        });
+        console.log(res.data)
+        
+        //router.push("/");
+      }
+      setLoading(false);
+    } catch (error: any) {
+      toast.error(error.response.data);
+      setLoading(false);
+    }
 
   }
 
@@ -161,7 +178,7 @@ const Contact = () => {
                     type="submit" 
                     className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
                   >
-                    Enviar
+                    Enviar {loading && <Loader />}
                   </button>
                 </div>
               </form>

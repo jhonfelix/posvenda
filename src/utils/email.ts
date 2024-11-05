@@ -1,14 +1,10 @@
 import nodemailer from "nodemailer";
 
 type EmailPayload = {
-  to: string;
+  to: any;
   subject: string;
   html: string;
 };
-
-
-
-
 
 
 // Replace with your SMTP credentials
@@ -23,12 +19,27 @@ const smtpOptions = {
 };
 
 export const sendEmail = async (data: EmailPayload) => {
-  const transporter = nodemailer.createTransport({
+
+  let transporter = nodemailer.createTransport({
+    host: "smtp.titan.email",
+    port: 465,
+    secure: true, // true for 465, false for other ports
+    auth: {
+        user: 'contato@posvenda.net.br', // generated ethereal user
+        pass: 'M@ndr@k3*ho', // generated ethereal password
+    }
+});
+
+return await transporter.sendMail({
+  from: 'contato@posvenda.net.br',
+  ...data,
+});
+ /* const transporter = nodemailer.createTransport({
     ...smtpOptions,
   });
 
   return await transporter.sendMail({
     from: process.env.EMAIL_FROM,
     ...data,
-  });
+  });*/
 };
