@@ -5,7 +5,9 @@ export async function POST(request: Request) {
 	const body = await request.json();
 	const { email,nome,telefone } = body;
 
-	if (!email) {
+	console.log(email)
+
+	if (!email || email === "") {
 		return new NextResponse("Error: necessário preencher todos os campos", { status: 400 });
 	}
 

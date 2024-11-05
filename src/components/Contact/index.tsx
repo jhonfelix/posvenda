@@ -7,9 +7,9 @@ import { useRouter } from "next/navigation";
 
 const Contact = () => {
 
-  const [nome, setNome] = useState(" ")
-  const [email, setEmail] = useState(" ")
-  const [telefone, setTelefone] = useState(" ")
+  const [nome, setNome] = useState("")
+  const [email, setEmail] = useState("")
+  const [telefone, setTelefone] = useState("")
   const [loading, setLoading] = useState(false);
 
   const router = useRouter();
@@ -140,6 +140,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    required
                     name="nome" value={nome} onChange={e => setNome(e.target.value)}
                     placeholder="Fulano de Tal"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
@@ -154,6 +155,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
+                    required
                     name="email" value={email} onChange={e => setEmail(e.target.value)}
                     placeholder="example@seuemail.com"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
@@ -168,6 +170,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    required
                     name="telefone" value={telefone} onChange={e => setTelefone(e.target.value)}
                     placeholder="+55 61 9999 9999"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
