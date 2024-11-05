@@ -1,5 +1,26 @@
 import Link from "next/link";
 
+/*
+<li>
+                    <Link
+                      href="/"
+                      className="text-dark flex items-center gap-[10px] text-base font-medium dark:text-white"
+                    >
+                      Home
+                    </Link>
+                  </li>
+        <li>
+                    <p className="text-body-color flex items-center gap-[10px] text-base font-medium">
+                      <span className="text-body-color dark:text-dark-6">
+                        {" "}
+                        /{" "}
+                      </span>
+                      {pageName}
+                    </p>
+                  </li>
+
+*/
+
 const Breadcrumb = ({
   pageName,
   pageDescription,
@@ -23,23 +44,8 @@ const Breadcrumb = ({
                 </p>
 
                 <ul className="flex items-center justify-center gap-[10px]">
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-dark flex items-center gap-[10px] text-base font-medium dark:text-white"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <p className="text-body-color flex items-center gap-[10px] text-base font-medium">
-                      <span className="text-body-color dark:text-dark-6">
-                        {" "}
-                        /{" "}
-                      </span>
-                      {pageName}
-                    </p>
-                  </li>
+                                   
+          
                 </ul>
               </div>
             </div>

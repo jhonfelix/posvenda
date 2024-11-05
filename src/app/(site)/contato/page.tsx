@@ -13,7 +13,7 @@ const ContactPage = () => {
   
   return (
     <>
-      <Breadcrumb pageName="Contato" />
+      <Breadcrumb pageName="Se preferir entramos em contato com você" pageDescription="Solicite o nosso contato através do formulário abaixo. Nossa equipe lhe retornará o mais rápido possível." />
 
       <Contact />
     </>
