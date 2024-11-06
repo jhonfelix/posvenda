@@ -54,12 +54,12 @@ const Contact = () => {
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
-                <span className="mb-6 block text-base font-medium text-primary dark:text-secondary">
+                <span className="ml-3 mb-6 block items-center text-base font-medium text-primary dark:text-secondary">
                   Fale conosco agora mesmo
                 </span>
 
                 <div className="relative">
-                        <div className="md:flex items-center md:space-x-4 mb-3">
+                        <div className="flex items-center md:space-x-4 mb-3">
                             <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                                 
                                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
@@ -77,13 +77,13 @@ const Contact = () => {
                                 </div>
                                 </div>
                           
-                            <div className=" ml-14 font-semibold text-[18px] lg:text-[20px] text-dark dark:text-white">Sem burocracia na contratação</div>
+                            <div className="ml-2 md:ml-14 font-semibold text-[14px] lg:text-[20px] text-dark dark:text-white">Sem burocracia na contratação</div>
                         </div>
                         
                     </div>
                 
                 <div className="relative">
-                        <div className="md:flex items-center md:space-x-4 mb-3">
+                        <div className="flex items-center md:space-x-4 mb-3">
                             <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                                 
                                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 ">
@@ -101,12 +101,12 @@ const Contact = () => {
                                 </div>
                                 </div>
                           
-                            <div className="ml-14 font-semibold text-[18px] lg:text-[20px] text-dark dark:text-white">Time especializado que entende seu negócio</div>
+                            <div className="ml-2 md:ml-14 font-semibold text-[14px] lg:text-[20px] text-dark dark:text-white">Time especializado que entende seu negócio</div>
                         </div>
                         
                     </div>
                 <div className="relative">
-                        <div className="md:flex items-center md:space-x-4 mb-3">
+                        <div className="flex items-center md:space-x-4 mb-3">
                             <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                                 
                                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 ">
@@ -124,13 +124,13 @@ const Contact = () => {
                                 </div>
                                 </div>
                           
-                            <div className=" ml-14 font-semibold text-[18px] lg:text-[20px] text-dark dark:text-white">Suporte Técnico 24/7</div>
+                            <div className="ml-2 md:ml-14 font-semibold text-[14px] lg:text-[20px] text-dark dark:text-white">Suporte Técnico 24/7</div>
                         </div>
                         
                     </div>
                
                 <div className="relative">
-                        <div className="md:flex items-center md:space-x-4 mb-3">
+                        <div className="flex items-center md:space-x-4 mb-3">
                             <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                                 
                                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 ">
@@ -148,7 +148,7 @@ const Contact = () => {
                                 </div>
                                 </div>
                           
-                            <div className="ml-14 font-semibold text-[18px] lg:text-[20px] text-dark dark:text-white">100% dos nossos clientes satisfeitos</div>
+                            <div className="ml-2 md:ml-14 font-semibold text-[14px] lg:text-[20px] text-dark dark:text-white">100% dos nossos clientes satisfeitos</div>
                         </div>
                         
                     </div>
