@@ -12,6 +12,7 @@ import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
+import { Analytics } from '@/components/Analytics';
 
 export const metadata: Metadata = {
   title: "PosVenda - Simplifique a Gestão do seu Negócio",
@@ -34,6 +35,7 @@ export default function Home() {
 
       
       <Contact />
+      <Analytics />
 
     </main>
   );
